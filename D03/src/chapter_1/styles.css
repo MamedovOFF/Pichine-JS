@@ -13,11 +13,11 @@
 	border-radius: 4px;
 }
 .numbers {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(4, 90px);
 	padding-bottom: 10px;
-	gap: 5px;
+	gap:5px;
+	justify-content: center;
 }
 .btn {
 	width: 90px;
@@ -35,11 +35,11 @@
 	margin-bottom: 0;
 }
 .result {
-	display: flex;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 280px 90px;
+	gap:5px;
 	justify-content: center;
 	margin-bottom: 5px;
-	gap: 5px;
 }
 #input {
 	width: 280px;
@@ -47,8 +47,8 @@
 	border-radius: 4px;
 	background-color: #fff;
 	border: none;
-	padding: 20px;
-	font-size: 22px;
+	padding: 18px;
+	font-size: 16px;
 }
 .title {
 	padding: 10px;

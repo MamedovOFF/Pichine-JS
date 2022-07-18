@@ -3,8 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html, body {
+	height: 100%;
+	background-color: antiquewhite;
+}
 #main {
-	margin: 5rem auto;
+	padding-top: 4rem;
 }
 #calculator {
 	margin: 0 auto;
@@ -13,33 +17,33 @@
 	border-radius: 4px;
 }
 .numbers {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(4, 90px);
 	padding-bottom: 10px;
-	gap: 5px;
+	gap:5px;
+	justify-content: center;
 }
-.btn {
+.btn-custom {
 	width: 90px;
 	height: 100px;
 	background-color: #fff;
 	border-radius: 4px;
 	border: none;
 }
-.btn:hover {
+.btn-custom:hover {
 	opacity: 0.7;
 }
-.btn.danger {
+.btn-custom.danger {
 	background-color: red;
 	color: #fff;
 	margin-bottom: 0;
 }
 .result {
-	display: flex;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 280px 90px;
+	gap:5px;
 	justify-content: center;
 	margin-bottom: 5px;
-	gap: 5px;
 }
 #input {
 	width: 280px;
@@ -47,8 +51,8 @@
 	border-radius: 4px;
 	background-color: #fff;
 	border: none;
-	padding: 20px;
-	font-size: 22px;
+	padding: 18px;
+	font-size: 16px;
 }
 .title {
 	padding: 10px;
