@@ -1,0 +1,24 @@
+{
+  "name": "d04",
+  "version": "1.0.0",
+  "description": "Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "src/chapter_2/Exercise_1.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dbr": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@repos-ssh.21-school.ru:2289/students/FRONT_04.ID_794491/spurple_test_frontent_osnova/FRONT_04-0.git"
+  },
+  "author": "Spurple",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1"
+  }
+}
